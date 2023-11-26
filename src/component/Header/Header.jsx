@@ -1,10 +1,11 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="p-4 dark:bg-gray-800 dark:text-gray-100">
-      <div className="container flex justify-between items-center h-16 mx-auto">
+    <header className=" dark:bg-gray-800 dark:text-gray-100 mx-10">
+      <div className=" flex justify-between items-center h-16">
         <Link>
           <div className="flex justify-center items-center content-center text-2xl text-white font-bold bg-orange-900 rounded-md px-2 border-4 border-yellow-600">
             <p>
@@ -24,22 +25,6 @@ const Header = () => {
             Sign up
           </button>
         </div>
-        <button className="p-4 lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className="w-6 h-6 dark:text-gray-100"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </button>
       </div>
     </header>
   );

@@ -1,43 +1,79 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 
 import Slider from "react-slick";
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import image1 from "../../assets/images/sliders/image1.jpg";
+import image2 from "../../assets/images/sliders/image2.jpg";
+import image3 from "../../assets/images/sliders/image3.jpg";
+import image4 from "../../assets/images/sliders/image4.jpg";
+import image5 from "../../assets/images/sliders/image5.jpg";
 const Sliders = () => {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
+  const sliders = [
+    {
+      id: 1,
+      title: "lorem ipsum lorem ipsum",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      image: image1,
+    },
+    {
+      id: 2,
+      title: "lorem ipsum lorem ipsum",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      image: image2,
+    },
+    {
+      id: 3,
+      title: "lorem ipsum lorem ipsum",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      image: image3,
+    },
+    {
+      id: 4,
+      title: "lorem ipsum lorem ipsum",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      image: image4,
+    },
+    {
+      id: 5,
+      title: "lorem ipsum lorem ipsum",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      image: image5,
+    },
+  ];
+
   return (
     <div>
       <Slider {...settings}>
-        <div>
-          <h2>This is header 1</h2>
-        </div>
-        <div>
-          <h2>This is header 1</h2>
-        </div>
-        <div>
-          <h2>This is header 1</h2>
-        </div>
-        <div>
-          <h2>This is header 1</h2>
-        </div>
-        <div className="flex justify-center items-center gap-4 w-full">
-          <h2 className="text-6xl">This is header with image</h2>
-          <img
-            src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGtpbmRlcmdhcnRlbiUyMHNjaG9vbCUyMGxvZ298ZW58MHx8MHx8fDA%3D"
-            alt=""
-            className="w-52"
-          />
-        </div>
-        <div>
-          <h2>This is header 1</h2>
-        </div>
+        {sliders.map((slider) => (
+          <div
+            key={slider.id}
+            className="flex flex-col justify-center items-center bg-gray-300 "
+          >
+            <div className="absolute text-center">
+              <h2 className="text-4xl text-white font-bold uppercase">
+                {slider.title}
+              </h2>
+              <p className="text-lg text-white mb-2">{slider.text}</p>
+              <button className="bg-orange-300  rounded-lg text-white">
+                Admission
+              </button>
+            </div>
+            <div className="w-64">
+              <img src={slider.image} alt="" />
+            </div>
+          </div>
+        ))}
       </Slider>
     </div>
   );
