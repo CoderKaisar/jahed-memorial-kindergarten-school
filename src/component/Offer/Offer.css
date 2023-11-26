@@ -1,0 +1,8 @@
+.offerTab:hover {
+  background-color: cadetblue;
+  border: none;
+}
+
+.offerTab:hover img {
+  background-color: yellow;
+}
