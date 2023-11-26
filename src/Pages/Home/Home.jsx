@@ -5,6 +5,7 @@ import Carousel from "../../component/Carousel/Carousel";
 import Portals from "../../component/Portals/Portals";
 import Offers from "../../component/Offers/Offers";
 import Promotional from "../../component/Promotional/Promotional";
+import Programs from "../../component/Programs/Programs";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Portals></Portals>
       <Offers></Offers>
       <Promotional></Promotional>
+      <Programs></Programs>
     </div>
   );
 };

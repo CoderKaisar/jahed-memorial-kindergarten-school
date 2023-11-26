@@ -1,0 +1,7 @@
+.programS:hover {
+  background-color: bisque;
+}
+
+.programS:hover .card-actions {
+  background-color: cadetblue;
+}
