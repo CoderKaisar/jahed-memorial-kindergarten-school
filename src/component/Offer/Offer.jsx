@@ -3,7 +3,7 @@ import "./Offer.css";
 const Offer = ({ offer }) => {
   const { title, ptext, icon } = offer;
   return (
-    <div className="rounded-lg shadow-xl border-2 border-dashed border-red-400 mr-6 flex flex-col p-4 w-72 h-82 justify-center items-center offerTab">
+    <div className="rounded-lg border-2 border-dashed border-gray-300 mr-6 flex flex-col p-4 w-72 h-82 justify-center items-center offerTab">
       <figure>
         <img
           src={icon}
