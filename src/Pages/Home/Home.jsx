@@ -6,6 +6,7 @@ import Portals from "../../component/Portals/Portals";
 import Offers from "../../component/Offers/Offers";
 import Promotional from "../../component/Promotional/Promotional";
 import Programs from "../../component/Programs/Programs";
+import Session from "../../component/Session/Session";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Offers></Offers>
       <Promotional></Promotional>
       <Programs></Programs>
+      <Session></Session>
     </div>
   );
 };

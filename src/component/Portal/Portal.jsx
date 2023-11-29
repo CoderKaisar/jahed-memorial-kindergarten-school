@@ -4,16 +4,19 @@ const Portal = ({ portal }) => {
   const { id, title, image } = portal;
   return (
     <div
-      className="card card-compact bg-base-100 shadow-xl -mt-24 h-96 bg-cover flex justify-center items-center align-middle "
+      className="card card-compact shadow-xl -mt-24 w-full h-96 bg-center bg-auto flex justify-center items-center align-middle "
       style={{
         backgroundImage: `url(${image})`,
+        backgroundSize: "cover",
       }}
     >
-      <div className="card-body py-14 bg-blue-500 bg-opacity-50 p-6 rounded-lg border-r-2 border-b-4 border-yellow-600 ">
-        <h2 className="card-title text-2xl pb-8 font-bold">{title}</h2>
+      <div className="card-body w-full h-full bg-blue-500 bg-opacity-50 flex flex-col justify-center items-center hover:animate_animated hover:animate-bounce hover:animate_slower">
+        <h2 className="card-title text-3xl text-orange-800  pb-8 font-semibold ">
+          {title}
+        </h2>
 
         <div className="card-actions flex justify-center items-center">
-          <button className="btn btn-primary bg-gray-500 text-white px-4 py-2 rounded-lg">
+          <button className="btn btn-primary bg-green-500 hover:bg-blue-400 font-semibold text-white px-4 py-2 rounded-lg">
             Login
           </button>
         </div>

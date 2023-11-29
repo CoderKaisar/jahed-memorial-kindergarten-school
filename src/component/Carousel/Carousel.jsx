@@ -4,7 +4,7 @@ import "../Carousel/Carousel.css";
 const Carousel = () => {
   return (
     <div className="carousel w-full h-screen bg-gradient-to-r from-gray-400 via-gray-600 to-blue-800 flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center items-center gap-4 ">
+      <div className="flex flex-col justify-center items-center gap-4">
         <img
           src="https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           className="w-52  h-52 rounded-full"

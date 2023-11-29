@@ -3,8 +3,8 @@ import "./Program.css";
 const Program = ({ program }) => {
   const { title, image, para, age, weakly, period } = program;
   return (
-    <div className="w-80 h-3/6  rounded-xl  shadow-blue-400 shadow-sm mx-auto my-6 programS">
-      <figure className="px-4 pt-6">
+    <div className="w-80 h-3/6  rounded-2xl  shadow-gray-200 shadow-sm mx-auto my-2 programS">
+      <figure className="px-4 pt-2">
         <img src={image} alt="Shoes" className="rounded-xl" />
       </figure>
       <div className="card-body items-center text-center px-8 py-4">
@@ -24,6 +24,9 @@ const Program = ({ program }) => {
             <p>period</p>
           </div>
         </div>
+        <button className="text-md font-semibold bg-blue-500 px-4 text-white py-2 rounded-full">
+          Admission
+        </button>
       </div>
     </div>
   );

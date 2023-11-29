@@ -1,9 +1,16 @@
 import React from "react";
-import Slider from "react-slick";
-import Program from "../Program/Program";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import Program from "../Program/Program";
 const Programs = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+  };
   const programs = [
     {
       id: 1,
@@ -37,15 +44,8 @@ const Programs = () => {
     },
   ];
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-  };
   return (
-    <div>
+    <div className="py-10">
       <div className="flex flex-col justify-center items-center py-6">
         <h2 className="text-5xl text-yellow-600 font-semibold py-6">
           Our Special Programs
@@ -56,11 +56,8 @@ const Programs = () => {
           of arts.
         </p>
       </div>
-      <div className="mx-10">
-        <Slider
-          {...settings}
-          className="flex justify-center items-center gap-2 pb-10"
-        >
+      <div className="mx-20 py-4 ">
+        <Slider {...settings}>
           {programs.map((program) => (
             <Program key={program.id} program={program}></Program>
           ))}
