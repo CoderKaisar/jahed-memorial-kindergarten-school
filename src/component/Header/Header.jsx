@@ -9,7 +9,7 @@ const Header = () => {
         <Link>
           <div className="flex justify-center items-center content-center text-2xl text-white font-bold bg-orange-900 rounded-md px-2 border-4 border-yellow-600">
             <p>
-              J<span className="bg-blue-800 px-2 py-2 mx-2 rounded-lg">G</span>S
+              J<span className="bg-blue-800 px-2 py-2 mx-2 rounded-lg">K</span>S
             </p>
           </div>
         </Link>
@@ -23,9 +23,9 @@ const Header = () => {
           <Link to="/login" className="self-center px-8 py-3 rounded">
             Login
           </Link>
-          <button className="self-center px-8 py-3 font-semibold rounded dark:bg-violet-400 dark:text-gray-900">
-            Sign up
-          </button>
+          <Link to="/register" className="self-center px-8 py-3 rounded">
+            Register
+          </Link>
         </div>
       </div>
     </header>

@@ -51,9 +51,8 @@ const Programs = () => {
           Our Special Programs
         </h2>
         <p className="text-xl w-2/3 text-center py-8">
-          <bold>Jehad Kinder Garten School </bold> opened its doors in 1984 with
-          a unique vision to provide its students with a globally focused study
-          of arts.
+          Jehad Kinder Garten School its doors in 1984 with a unique vision to
+          provide its students with a globally focused study of arts.
         </p>
       </div>
       <div className="mx-20 py-4 ">
