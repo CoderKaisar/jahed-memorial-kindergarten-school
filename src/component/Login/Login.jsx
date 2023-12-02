@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import login from "../../assets/images/misc/login.jpg";
 import { CiFacebook, CiTwitter } from "react-icons/ci";
 import { SlSocialLinkedin } from "react-icons/sl";
@@ -8,6 +8,7 @@ import { PiGoogleLogo } from "react-icons/pi";
 
 const Login = () => {
   const navigate = useNavigate();
+  const [show, setShow] = useState(false);
   const { LoginUser, GoogleLogin } = useContext(AuthContext);
   const handleLogin = (event) => {
     event.preventDefault();
@@ -69,14 +70,25 @@ const Login = () => {
                 </span>
               </label>
               <input
-                type="password"
+                type={show ? "text" : "password"}
                 name="password"
                 placeholder="Enter Password"
                 className="input input-bordered input-lg w-full max-w-xs h-8 rounded-sm pl-2"
               />
-              <p className="text-xs font-semibold text-right pt-2">
-                Forgot Password
-              </p>
+              <div className="flex justify-between gap-4">
+                <p onClick={() => setShow(!show)}>
+                  <small>
+                    {show ? (
+                      <span>Hide Password</span>
+                    ) : (
+                      <span>Show Password</span>
+                    )}
+                  </small>
+                </p>
+                <p className="text-xs font-semibold text-right pt-2">
+                  Forgot Password
+                </p>
+              </div>
             </div>
             <button className="text-xl font-semibold text-center bg-gray-500 hover:bg-blue-500 px-6 rounded-md text-white">
               Login
