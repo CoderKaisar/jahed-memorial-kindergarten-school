@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB5lk2ekj_xaTJEjBfpT1SBSrf1WCJ1VrM",
-  authDomain: "jehad-kinder-garten-school.firebaseapp.com",
-  projectId: "jehad-kinder-garten-school",
-  storageBucket: "jehad-kinder-garten-school.appspot.com",
-  messagingSenderId: "82823425415",
-  appId: "1:82823425415:web:dad3d5ba154c83cd323722",
+  apiKey: "AIzaSyBFPCbKBCdo4OXTuvWF0L2LHMAqytJnOGs",
+  authDomain: "school-application-b224e.firebaseapp.com",
+  projectId: "school-application-b224e",
+  storageBucket: "school-application-b224e.appspot.com",
+  messagingSenderId: "103772313512",
+  appId: "1:103772313512:web:2045fe2d65d27a271daf9d",
 };
 
 // Initialize Firebase
